@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Planner</title>
+    <link rel="icon" type="image/png" href="image.png"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Budget Planner</h1>
+    <table width="100%" border="0">
+      <tr>
+        <td width = "25%"><div id="backup" style="text-align: center"></div></td>
+        <td width = "50%"><div id="accountSelect" style="text-align: center"></div><br></td>
+        <td width = "25%""><div id="restore" style="text-align:center"></div></td>
+      </tr>
+    </table>
+    Edit bill details:
+    <div id="display" class="display">
+        <p>Bill Title: <input type="text" id="name"></p>
+        <p>Date Total is Due: <input type="date" id="date"></p>
+        <p>Total bill amount: $<input type="number" id="amount"></p>
+        <p>Frequency of Payments:
+          <select id="dueEveryMonths">
+            <option value="0">One-time payment</option>
+            <option value="1">Every month</option>
+            <option value="2">Every 2 months</option>
+            <option value="3">Every 3 months</option>
+            <option value="4">Every 4 months</option>
+            <option value="5">Every 5 months</option>
+            <option value="6">Every 6 months</option>
+            <option value="7">Every 7 months</option>
+            <option value="8">Every 8 months</option>
+            <option value="9">Every 9 months</option>
+            <option value="10">Every 10 months</option>
+            <option value="11">Every 11 months</option>
+            <option value="12">Every 12 months</option>
+          </select></p>
+        <button type="submit" id="submit">Submit</button>
+        <button type="cancel" id="cancel">Cancel</button>
+    </div>
+    <div id="error" style="visibility: hidden"><p style="color: red; text-align: center; font-style: italic">Please fill in all fields with sensible values!</p></div>
+    <script src="../uuidv4.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+      integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="DOM-functions.js"></script>
+    <script src="app-functions.js"></script>
+    <script src="edit.js"></script>
+  </body>
+</html>

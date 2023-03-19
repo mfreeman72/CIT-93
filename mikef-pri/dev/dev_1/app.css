@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(231, 252, 217);
+  font-family: arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+div.display {
+  margin: auto;
+  background-color: white;
+  width: 98%;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 15px
+}
+
+.material-icons {
+  border: 0px;
+  padding: 0px 5px;
+  background-color: white;
+  color: #000;
+  vertical-align: middle;
+}
