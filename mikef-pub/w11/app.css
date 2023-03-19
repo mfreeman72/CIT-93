@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(217, 243, 252);
+  font-family: ubuntu;
+}
+h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+hr.short-round {
+  border-top: 8px solid rgb(14, 106, 112);
+  border-radius: 5px;
+  width: 75%;
+}
+div.start {
+  text-align: center;
+}
+div.display {
+  margin: auto;
+  background-color: white;
+  width: 70%;
+  border: 2px solid black;
+  padding: 50px;
+}
+
+.material-icons {
+  border: 0px;
+  padding: 5px 5px;
+  background-color: rgb(217, 243, 252);
+  color: #000;
+  vertical-align: middle;
+}
+
+a:link, a:visited {
+  background-color: rgb(126, 151, 160);
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(2, 184, 250);
+}

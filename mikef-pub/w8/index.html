@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(217, 243, 252);
+        font-family: ubuntu;
+      }
+      h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+      }
+      hr.short-round {
+        border-top: 8px solid rgb(14, 106, 112);
+        border-radius: 5px;
+        width: 75%;
+      }
+      div.header {
+        text-align: center;
+      }
+      div.display {
+        margin: auto;
+        background-color: white;
+        width: 70%;
+        border: 2px solid black;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Kid Drop-off Schedule:</h1>
+      <label>Who is driving kids today?
+        <input type="text" id="driver" placeholder="First name" />
+      </label>
+      <br /><br />
+      <label>Day:
+        <select id="day">
+          <option value="1">Monday</option>
+          <option value="2">Tuesday</option>
+          <option value="3">Wednesday</option>
+          <option value="4">Thursday</option>
+          <option value="5">Friday</option>
+        </select>
+      </label>
+      <label>
+        <input id="assembly" type="checkbox" /> Check if today is an assembly day
+      </label>
+      <br /><br />
+    </div>
+    <hr class="short-round" />
+    <br />
+    <div id="schedule" class="display"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

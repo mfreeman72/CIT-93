@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driving Scheduler</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <h1>Create/View a Drop-off Schedule:</h1>
+    <div class="start">
+      <label>
+        Please select the starting date for this week:
+        <input type="date" id="startingDate" required />
+      </label>
+      <p></p>
+      <label>
+        <b><u>Who is driving?</u></b>
+        <br />
+        <input type="text" id="driver" placeholder="First name" required />
+        <br />
+      </label>
+      <p id="initError" style="color: red"><i>Please fill select a date and enter the driver's name!</i></p>
+      <label>
+        <button id="submit" class="submit" type="submit">Create new schedule</button>
+        <p id="view" class="view">Or select a previous schedule to view:</p>
+        <div class="view"></div>
+      </label>
+    </div>
+    <script src="../uuidv4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app-functions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

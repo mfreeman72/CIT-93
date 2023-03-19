@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(217, 243, 252);
+        font-family: ubuntu;
+      }
+      h1 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+      }
+      hr.short-round {
+        border-top: 8px solid rgb(14, 106, 112);
+        border-radius: 5px;
+        width: 75%;
+      }
+      div.header {
+        text-align: center;
+      }
+      div.display {
+        margin: auto;
+        background-color: white;
+        width: 70%;
+        border: 2px solid black;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title"><span id="init">Create/View a </span>Drop-off Schedule:</h1>
+    <div class="header">
+      <label>
+        Please select the Monday starting this week:
+        <input type="date" id="startingDate" required />
+      </label>
+      <p></p>
+      <label>
+        <b><u>Who is driving?</u></b>
+        <br />
+        <input type="text" id="driver" placeholder="First name" required />
+        <br />
+      </label>
+      <p id="initError" style="color: red"><i>Please fill select a date and enter the driver's name!</i></p>
+      <label>
+        <button id="submit" class="submit" type="submit">Create new schedule</button>
+        <button id="view" class="view" type="submit">View previous schedule</button>
+      </label>
+      <br /><br />
+      <hr class="short-round" id="separator" class="display" />
+      <br />
+    </div>
+    <div id="schedule" class="display"></div>
+    <script src="../uuidv4.js"></script>
+    <script src="app-functions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
